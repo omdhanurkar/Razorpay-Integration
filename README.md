@@ -37,7 +37,7 @@ If you are re-using this as your final code, please make sure you do the followi
 3. Verify the signature emitted from our server based on the algorithm given at https://docs.razorpay.com/docs/orders
 
 
-# Razorpay NODEJD SDK
+# Razorpay Nodejs SDK
 Make sure that you download the latest version of `razorpay` file from
 You can extract that to the npm i razorpay directory as well.
 
