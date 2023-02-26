@@ -12,7 +12,7 @@ const Home = () => {
     const { data: { order } } = await axios.post("http://localhost:4000/checkout", {
       amount
     })
-
+    
     const options = {
       key,
       amount: order.amount,
