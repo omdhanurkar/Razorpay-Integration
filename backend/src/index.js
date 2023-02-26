@@ -19,6 +19,6 @@ mongoose.connect("mongodb://localhost:27017/razorpay", {
 app.use("/", router)
 
 
-app.listen(process.env.PORT || 3001, () => {
-    console.log(`Express app running on port ${process.env.PORT || 3001}`)
+app.listen(process.env.PORT || 4000, () => {
+    console.log(`Express app running on port ${process.env.PORT || 4000}`)
 })
