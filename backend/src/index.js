@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-mongoose.connect(process.env.DB, {
+mongoose.connect("mongodb://localhost:27017/razorpay", {
     useNewUrlParser: true
 })
     .then(() => console.log("MongoDB is Connected"))
