@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/razorpay", {
+mongoose.connect(process.env.DB, {
     useNewUrlParser: true
 })
     .then(() => console.log("MongoDB is Connected"))
@@ -19,6 +19,6 @@ mongoose.connect("mongodb://localhost:27017/razorpay", {
 app.use("/", router)
 
 
-app.listen(process.env.PORT || 4000, () => {
-    console.log(`Express app running on port ${process.env.PORT || 4000}`)
+app.listen(process.env.PORT , () => {
+    console.log(`Express app running on port ${process.env.PORT }`)
 })
