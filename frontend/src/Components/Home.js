@@ -4,6 +4,7 @@ import Card from "./Card"
 import axios from "axios"
 
 const Home = () => {
+
   const checkoutHandler = async (amount) => {
 
     const { data: { key } } = await axios.get("http://localhost:4000/getkey")
@@ -35,11 +36,7 @@ const Home = () => {
     };
     const razor = new window.Razorpay(options);
     razor.open();
-    Swal.fire({
-      title: <strong>Good job!</strong>,
-      html: <i>You clicked the button!</i>,
-      icon: 'success'
-    })
+    
   }
   return (
     <Box>
